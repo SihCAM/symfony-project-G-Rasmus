@@ -1,3 +1,18 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
-    background-color: lightgray;
+    background-color: rgb(240, 238, 238);
+}
+
+.btn-primary {
+    padding: 1Épx;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
