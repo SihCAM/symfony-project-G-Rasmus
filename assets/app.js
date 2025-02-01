@@ -10,4 +10,23 @@ import 'bootstrap';
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
+
+
 import './styles/app.css';
+
+// On attend que la page soit complètement chargée
+document.addEventListener('DOMContentLoaded', function () {
+    // On sélectionne tous les liens du menu
+    const menuLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // On applique un événement au clic sur chaque lien
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            // Animation au clic
+            this.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+        });
+    });
+});

@@ -5,7 +5,7 @@ body {
 }
 
 .btn-primary {
-    padding: 1Épx;
+    padding: 10px;
     font-size: 18px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -15,4 +15,52 @@ body {
     background-color: #004080;
     transform: scale(1.05);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Navbar */
+
+nav {
+    border: none !important;
+}
+
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Légère ombre pour le menu */
+}
+
+/* Liens dans la navbar */
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555; /* Couleur gris clair */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet de survol des liens */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9c9c9c; /* Couleur gris foncé au survol */
+}
+
+/* Fond pastel */
+.navbar-light {
+    background-color: #f0f8ff; /* Couleur pastel bleutée */
+}
+
+/* Centrer le menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    width: 100%;  /* Prendre toute la largeur */
+}
+
+/* Espacement des éléments du menu */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
 }
