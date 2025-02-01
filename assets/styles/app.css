@@ -126,5 +126,17 @@ h2 {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Style du lien fictif */
+.fictif-link {
+    color: #7faac9; 
+    font-weight: 500; /* Optionnel : rend le texte un peu plus visible */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.fictif-link:hover {
+    color: #5a87af; /* Bleu légèrement plus foncé au survol */
+}
+
 
 
