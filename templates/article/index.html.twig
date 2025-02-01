@@ -3,16 +3,17 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <h1>Article index</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Articles</h1>
 
-    <table class="table">
-        <thead>
+    <table class="table table-striped table-hover">
+        <thead class="bg-primary text-white">
             <tr>
                 <th>Id</th>
                 <th>Title</th>
                 <th>Category</th>
                 <th>Content</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -27,17 +28,21 @@
                 </td>
                 <td>{{ article.content }}</td>
                 <td>
-                    <a href="{{ path('article_show', {'id': article.id}) }}">show</a>
-                    <a href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
+                <div class="btn-container">
+                    <a href="{{ path('article_show', {'id': article.id}) }}" class="btn btn-action">show</a>
+                    <a href="{{ path('article_edit', {'id': article.id}) }}" class="btn btn-action">edit</a>
+                </div>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="5" class="text-center texte-muted">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('article_new') }}">Create new</a>
+<div class="text-center mt-4">
+    <a href="{{ path('article_new') }}" class="btn btn-create">Create new</a>
+</div>
+</div>
 {% endblock %}

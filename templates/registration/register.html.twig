@@ -2,20 +2,22 @@
 {%block title%}Inscription{%endblock%}
 
 {%block body%}
+<h1>Inscription</h1>
 
-<div class="container d-flex justify-content-center align-itmes-center" style="min-height: 100vh;">
+<div class="container d-flex justify-content-center align-itmes-center" style="min-height: 70vh;">
 <div class="card p-4 shadow-lg" style="width: 400px; max-width: 90%; height: auto; max-height: 600px; overflow-y: auto;">
 <h2 class="text-center mb-4">Créer un compte</h2>
     
            
             {{ form_start(registrationForm ) }}
-    <div class="mb-5">
+    <div class="mb-4">
                 {{ form_label(registrationForm.email) }}
                 {{ form_widget(registrationForm.email, { 'attr': {'class': 'form-control', 'placeholder': 'Votre email'} }) }}
                 <div class="text-danger">{{ form_errors(registrationForm.email) }}
+                </div>
     </div>
     <div class="mb-5">
-                {{ form_label(registrationForm.plainPassword) }}
+                {{ form_label(registrationForm.plainPassword, 'Mot de passe') }}
                 {{ form_widget(registrationForm.plainPassword, { 'attr': {'class': 'form-control', 'placeholder': 'Votre mot de passe'} }) }}
                 <div class="text-danger">{{ form_errors(registrationForm.plainPassword) }}
                 </div>

@@ -1,10 +1,119 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(208, 228, 233);
+}   
+
+
+/* Navbar */
+
+nav {
+    border: none !important;
+}
+
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Légère ombre pour le menu */
+}
+
+    /* Liens dans la navbar */
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555; /* Couleur gris clair */
+    transition: color 0.3s ease-in-out;
+}
+
+    /* Effet de survol des liens */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9c9c9c; /* Couleur gris foncé au survol */
+}
+
+    /* Fond pastel */
+.navbar-light {
+    background-color: #b0d5f5; /* Couleur pastel bleutée */
+}
+
+    /* Centrer le menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    width: 100%;  /* Prendre toute la largeur */
+}
+
+    /* Espacement des éléments du menu */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+/*h1*/
+h1 {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Tableau Articles*/
+
+    /* Styles des boutons "Show" et "Edit" */
+.btn-action {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5a87af;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.btn-action:hover {
+    background-color: #004080;
+    color: white;
+}
+    /*Conteneur des boutons show et edit */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    /* Bouton "Create New" */
+.btn-create {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5a87af;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-create:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    color: white;
+}
+
+    /*Formulaire d'inscription*/
+.container {
+    margin-top: 50px;
+}
+h2 {
+    color: #5a87af;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
+    background-color: #5a87af;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -19,48 +128,3 @@ body {
 
 
 
-
-/* Navbar */
-
-nav {
-    border: none !important;
-}
-
-
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Légère ombre pour le menu */
-}
-
-/* Liens dans la navbar */
-.navbar-light .navbar-nav .nav-link {
-    font-size: 18px;
-    font-weight: 500;
-    color: #555; /* Couleur gris clair */
-    transition: color 0.3s ease-in-out;
-}
-
-/* Effet de survol des liens */
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #9c9c9c; /* Couleur gris foncé au survol */
-}
-
-/* Fond pastel */
-.navbar-light {
-    background-color: #f0f8ff; /* Couleur pastel bleutée */
-}
-
-/* Centrer le menu */
-.navbar-nav {
-    display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    width: 100%;  /* Prendre toute la largeur */
-}
-
-/* Espacement des éléments du menu */
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
-
-.navbar-nav .nav-item:last-child {
-    margin-right: 0;
-}
